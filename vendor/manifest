@@ -1,0 +1,30 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/araddon/gou",
+			"repository": "https://github.com/araddon/gou",
+			"revision": "0c2ab7394d785afff14c983fedce4be70ccc431f",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/bitly/go-hostpool",
+			"repository": "https://github.com/bitly/go-hostpool",
+			"revision": "d0e59c22a56e8dadfed24f74f452cea5a52722d2",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/jasonlvhit/gocron",
+			"repository": "https://github.com/jasonlvhit/gocron",
+			"revision": "b075c79d7ad9188ff6331cf9900de8c4811dc1a2",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/mattbaird/elastigo/lib",
+			"repository": "https://github.com/mattbaird/elastigo",
+			"revision": "bc78e4c1825bc4090e530ddedaf8cd182c5a9450",
+			"branch": "master",
+			"path": "/lib"
+		}
+	]
+}
