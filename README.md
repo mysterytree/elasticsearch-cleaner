@@ -2,16 +2,17 @@
 
 [![build status](https://gitlab.baozou.com/ci/projects/17/status.png?ref=master)](https://gitlab.baozou.com/ci/projects/17?ref=master)
 
-##简介
+## 简介
 * 自动删除elasticsearch旧日志的工具
 
-##主要功能
+## 主要功能
 * 每晚自动删除x天前日志
 * 删除某个日期到x天前的所有日志
 
 
 
-##安装环境
+## 安装环境
+
 ###  docker:
 
 ```
@@ -33,9 +34,9 @@ Server:
 
 ```
  
-##安装方法
+## 安装方法
 
-###1.编辑Dockerfile，根据实际情况修改CMD
+### 1.编辑Dockerfile，根据实际情况修改CMD
 * ``-i``  后跟需删除的index前缀，如``logstash-momoapi-`` 多个index以``，``分割
 * ``-n``后跟保留多少天的日志
 * ``-t``  后跟需删除的日期，如2015.11.02 ，将删除2015.11.02 到n天前的所有日志
@@ -54,20 +55,20 @@ CMD /go/bin/es-cleaner －i logstash-momoapi-,logstash-ribao-  -n 5   -t 2014.11
 ```
 CMD /go/bin/es-cleaner -i logstash-momoapi-,logstash-ribao-  -n 10  -h 192.168.1.2 -p 9200
 ```
-###2.打包镜像
+### 2.打包镜像
 
 执行：
 
 ```
 docker build -t dockernj.baozou.com/nanjing/escleaner .
 ```
-###3.上传
+### 3.上传
 ```
 docker login
 
 docker push dockernj.baozou.com/nanjing/escleaner
 ```
-###4.运行
+### 4.运行
 ```
 docker run －d --rm dockernj.baozou.com/nanjing/escleaner
 ```
