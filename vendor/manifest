@@ -20,11 +20,10 @@
 			"branch": "master"
 		},
 		{
-			"importpath": "github.com/mattbaird/elastigo/lib",
+			"importpath": "github.com/mattbaird/elastigo",
 			"repository": "https://github.com/mattbaird/elastigo",
 			"revision": "bc78e4c1825bc4090e530ddedaf8cd182c5a9450",
-			"branch": "master",
-			"path": "/lib"
+			"branch": "master"
 		}
 	]
 }
