@@ -1,5 +1,7 @@
 # About escleaner
 
+[![build status](https://gitlab.baozou.com/ci/projects/17/status.png?ref=master)](https://gitlab.baozou.com/ci/projects/17?ref=master)
+
 ##简介
 * 自动删除elasticsearch旧日志的工具
 
