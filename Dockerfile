@@ -13,3 +13,7 @@ WORKDIR /go/src/es-cleaner
 
 # 编译
 RUN go install es-cleaner
+
+#运行
+
+CMD /go/bin/es-cleaner  -n 10  
