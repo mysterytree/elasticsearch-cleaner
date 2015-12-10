@@ -1,0 +1,9 @@
+build escleaner:
+  script:
+    - docker build -t dockernj.baozou.com/nanjing/escleaner --rm .
+    - docker push dockernj.baozou.com/nanjing/escleaner
+  stage: build
+  tags:
+    - nj-docker-build
+  only:
+    - master
