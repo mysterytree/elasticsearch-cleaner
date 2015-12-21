@@ -65,7 +65,7 @@ func deletePreviousIndex(indexName string) {
 func autoDelete() {
 	for i := 0; i < len(indexNames); i++ {
 		//遍历删除
-		deleteIndex(indexNames[i] + time.Now().AddDate(0, 0, 1-*remainNumber).Format(layout))
+		deleteIndex(indexNames[i] + time.Now().AddDate(0, 0, 0-*remainNumber).Format(layout))
 	}
 }
 

@@ -70,5 +70,5 @@ docker push dockernj.baozou.com/nanjing/escleaner
 ```
 ### 4.运行
 ```
-docker run －d --rm dockernj.baozou.com/nanjing/escleaner
+docker run -d  dockernj.baozou.com/nanjing/escleaner /go/bin/es-cleaner -n 10  -i logstash-bzrb-
 ```
