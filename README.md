@@ -1,7 +1,5 @@
 # About escleaner
 
-[![build status](https://gitlab.baozou.com/ci/projects/17/status.png?ref=master)](https://gitlab.baozou.com/ci/projects/17?ref=master)
-
 ## 简介
 * 自动删除elasticsearch旧日志的工具
 
@@ -60,15 +58,15 @@ CMD /go/bin/es-cleaner -i logstash-momoapi-,logstash-ribao-  -n 10  -h 192.168.1
 执行：
 
 ```
-docker build -t dockernj.baozou.com/nanjing/escleaner .
+docker build -t xx.xx.com/xx/escleaner .
 ```
 ### 3.上传
 ```
 docker login
 
-docker push dockernj.baozou.com/nanjing/escleaner
+docker push xx.xx.com/xx/escleaner
 ```
 ### 4.运行
 ```
-docker run -d  dockernj.baozou.com/nanjing/escleaner /go/bin/es-cleaner -n 10  -i logstash-bzrb-
+docker run -d  xx.xx.com/xx/escleaner /go/bin/es-cleaner -n 10  -i logstash-bzrb-
 ```
